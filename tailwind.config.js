@@ -1,4 +1,8 @@
 module.exports = {
+    safelist: [
+        /^language-/,
+        /^token/,
+    ],
     content: [
         "./posts/**/*.md",
         "./*.md",
@@ -8,5 +12,5 @@ module.exports = {
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/typography')],
 }

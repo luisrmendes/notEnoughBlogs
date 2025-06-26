@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <link href="{{ '/assets/output.css' | url }}" rel="stylesheet" />
+  <link href="https://unpkg.com/prismjs/themes/prism-okaidia.css" rel="stylesheet" />
 </head>
 
-
-<body class="min-h-screen bg-neutral-900 text-neutral-200 font-sans p-8">
+<body class="min-h-screen bg-neutral-900 text-neutral-200 font-sans pb-8">
   {% include "header.njk" %}
 
   <article class="max-w-3xl mx-auto">
@@ -16,7 +16,7 @@
       {{ date | date("MMMM d, yyyy") }}
     </time>
 
-    <section class="prose prose-invert max-w-none">
+    <section class="prose prose-invert">
       {{ content | safe }}
     </section>
   </article>

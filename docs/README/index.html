@@ -3,10 +3,8 @@
 <pre><code>npx eleventy --serve
 </code></pre>
 <h3>Setup static page with tailwind and 11ty</h3>
-<pre><code class="language-bash">npm install tailwindcss @tailwindcss/cli
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> tailwindcss @tailwindcss/cli</code></pre>
 <p>src/input.css</p>
-<pre><code class="language-css">@import &quot;tailwindcss&quot;;
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@import</span> <span class="token string">"tailwindcss"</span><span class="token punctuation">;</span></span></code></pre>
 <pre><code>npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
 </code></pre>
