@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+    "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "luxon": "^3.6.1"
   }
 }

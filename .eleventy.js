@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("posts/*.md").sort((a, b) => b.date - a.date);
+    return collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date);
   });
 
   eleventyConfig.addPassthroughCopy("assets");

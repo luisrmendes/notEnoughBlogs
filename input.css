@@ -1,19 +1,1 @@
 @import "tailwindcss";
-
-body {
-    @apply bg-neutral-900 text-neutral-200 font-sans;
-}
-
-h1,
-h2,
-h3 {
-    @apply text-neutral-100 mt-4 mb-2;
-}
-
-p {
-    @apply mb-4;
-}
-
-a {
-    @apply text-blue-400 hover:underline;
-}
