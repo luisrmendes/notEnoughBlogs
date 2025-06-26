@@ -17,5 +17,5 @@ src/input.css
 ```
 
 ```
-npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
 ```

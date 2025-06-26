@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: layout.njk
+layout: blog.njk
 ---
 
 # Welcome to My Blog

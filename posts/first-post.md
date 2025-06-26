@@ -1,6 +1,7 @@
 ---
-title: First Post
-layout: layout.njk
+title: "My First Post"
+date: 2025-06-26
+layout: post.njk
 ---
 
 # Hello World

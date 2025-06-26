@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
+  <link href="{{ '/assets/output.css' | url }}" rel="stylesheet" />
+</head>
+
+
+<body class="min-h-screen bg-neutral-900 text-neutral-200 font-sans p-8">
+  {% include "header.njk" %}
+
+  <article class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
+    <time datetime="{{ date.toISOString() }}" class="block text-neutral-400 mb-8">
+      {{ date | date("MMMM d, yyyy") }}
+    </time>
+
+    <section class="prose prose-invert max-w-none">
+      {{ content | safe }}
+    </section>
+  </article>
+
+</body>
+</html>

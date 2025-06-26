@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-screen">
+
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
-  <link href="/notEnoughBlogs/assets/output.css" rel="stylesheet" />
+  <link href="/notEnoughBlogs/assets/output.css" rel="stylesheet">
 </head>
-<body class="max-w-4xl mx-auto p-4 bg-gray-100 text-gray-800">
-  <header class="text-3xl font-bold text-blue-600 mb-8">My Blog</header>
-  <h1>Welcome to My Blog</h1>
-<p>Check out my latest posts:</p>
-<ul>
-<li><a href="posts/first-post/">First Post</a></li>
+
+<body class="min-h-screen bg-neutral-900 text-neutral-200 flex flex-col">
+
+  <header class="bg-neutral-950/80 backdrop-blur-sm border-b border-neutral-800 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold text-neutral-100 tracking-wide">
+            <a href="/notEnoughBlogs/" class="hover:text-neutral-300 no-underline hover:no-underline transition-colors">
+                notEnoughBlogs
+            </a>
+        </h1>
+    </div>
+</header>
+
+  <main class="flex-grow flex items-center justify-center p-6">
+    <div class="max-w-2xl w-full">
+      
+<ul class="space-y-6">
+  
+    <li class="border border-neutral-700 rounded-lg p-6 hover:bg-neutral-800 transition cursor-pointer">
+      <a href="/notEnoughBlogs/posts/first-post/" class="block no-underline">
+        <h2 class="text-xl font-semibold text-blue-400 hover:text-blue-300 mb-1">
+          My First Post
+        </h2>
+        <time datetime="2025-06-26T00:00:00.000Z" class="text-sm text-neutral-400 mb-2 block">
+          June 26, 2025
+        </time>
+        <p class="text-neutral-300 line-clamp-3">
+          Hello World This is my first blog post written in Markdown.
+        </p>
+      </a>
+    </li>
+  
+    <li class="border border-neutral-700 rounded-lg p-6 hover:bg-neutral-800 transition cursor-pointer">
+      <a href="/notEnoughBlogs/posts/second-post/" class="block no-underline">
+        <h2 class="text-xl font-semibold text-blue-400 hover:text-blue-300 mb-1">
+          My Second Post
+        </h2>
+        <time datetime="2025-06-26T00:00:00.000Z" class="text-sm text-neutral-400 mb-2 block">
+          June 26, 2025
+        </time>
+        <p class="text-neutral-300 line-clamp-3">
+          Hello World This is my second blog post written in Markdown.
+        </p>
+      </a>
+    </li>
+  
 </ul>
 
+    </div>
+  </main>
+
 </body>
+
 </html>
