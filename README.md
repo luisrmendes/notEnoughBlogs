@@ -1,17 +1,35 @@
 # notEnoughBlogs
 
-### Build
+## Build
+
+Build Tailwind output.css
+
+```
+npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
+```
+
+Build static page
+
+```
+npm run build
+```
+
+## Run
+
+Serve page
+
 ```
 npx eleventy --serve
 ```
 
-### Setup static page with tailwind and 11ty
+## First setup static page with tailwind and 11ty
 
 ```bash
 npm install tailwindcss @tailwindcss/cli
 ```
 
 src/input.css
+
 ```css
 @import "tailwindcss";
 ```
