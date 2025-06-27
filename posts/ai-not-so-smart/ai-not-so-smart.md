@@ -8,7 +8,7 @@ layout: post.njk
 ## AI Not So Intelligent
 
 This is my revolutionary post.  
-Here is some Rust code to annoy some.
+Here is some Rust code to annoy some sdf.
 
 ```rust
 /// Returns the results of the operations performed in the `QubitLayer`.  
