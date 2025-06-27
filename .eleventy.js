@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     pathPrefix: "/notEnoughBlogs/",
     dir: {
       input: ".",
-      includes: "_includes",
+      includes: "src/_includes",
       output: "docs"
     }
   };

@@ -5,7 +5,7 @@
 Build Tailwind output.css
 
 ```
-npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
+npx @tailwindcss/cli -i ./src/input.css -o ./src/assets/output.css --watch
 ```
 
 Build static page
