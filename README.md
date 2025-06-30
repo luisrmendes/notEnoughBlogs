@@ -1,5 +1,10 @@
 # notEnoughBlogs
 
+## First Setup
+```
+npm i
+```
+
 ## Build
 
 Build Tailwind output.css

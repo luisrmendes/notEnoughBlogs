@@ -1,0 +1,21 @@
+<h1>notEnoughBlogs</h1>
+<h2>First Setup</h2>
+<pre><code>npm i
+</code></pre>
+<h2>Build</h2>
+<p>Build Tailwind output.css</p>
+<pre><code>npx @tailwindcss/cli -i ./src/input.css -o ./src/assets/output.css --watch
+</code></pre>
+<p>Build static page</p>
+<pre><code>npm run build
+</code></pre>
+<h2>Run</h2>
+<p>Serve page</p>
+<pre><code>npx eleventy --serve
+</code></pre>
+<h2>First setup static page with tailwind and 11ty</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> tailwindcss @tailwindcss/cli</code></pre>
+<p>src/input.css</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@import</span> <span class="token string">"tailwindcss"</span><span class="token punctuation">;</span></span></code></pre>
+<pre><code>npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
+</code></pre>
