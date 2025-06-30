@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "npx eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy"
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/output.css --minify",
+    "build": "npm run build:css && eleventy"
   },
   "repository": {
     "type": "git",
