@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>An opinion in AI intelligence</title>
+  <link href="/notEnoughBlogs/assets/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/prismjs/themes/prism-okaidia.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css" />
+</head>
+
+<body class="min-h-screen bg-neutral-900 text-neutral-200 font-sans">
+  <header class="bg-neutral-950/80 backdrop-blur-sm border-b border-neutral-800 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold text-neutral-100 tracking-wide">
+            <a href="/notEnoughBlogs/" class="hover:text-neutral-300 no-underline hover:no-underline transition-colors">
+                notEnoughBlogs
+            </a>
+        </h1>
+    </div>
+</header>
+
+  <article class="max-w-3xl mx-auto pt-8">
+    <h1 class="text-4xl font-bold mb-4">An opinion in AI intelligence</h1>
+    <time datetime="2025-06-18T00:00:00.000Z" class="block text-neutral-400 mb-8">
+      June 18, 2025
+    </time>
+
+    <section style="background-color: #171717 !important;" class="markdown-body">
+      <h2>AI Not So Intelligent</h2>
+<p>This is my revolutionary post.<br>
+Here is some Rust code to annoy some sdf.</p>
+<pre class="language-rust"><code class="language-rust"><span class="token comment">/// Returns the results of the operations performed in the `QubitLayer`.  </span>
+<span class="token comment">/// Equivalent to collapsing qubits to obtain its state.</span>
+<span class="token comment">/// # Examples</span>
+<span class="token comment">/// ```</span>
+<span class="token comment">/// use quantum_state_sim::{QubitLayer, QuantumOp};</span>
+<span class="token comment">///</span>
+<span class="token comment">/// let mut q_layer = QubitLayer::new(20);</span>
+<span class="token comment">/// q_layer.execute(vec![(QuantumOp::Hadamard, 0)]);</span>
+<span class="token comment">/// println!("{:?}", q_layer.measure_qubits());</span>
+<span class="token comment">///</span>
+<span class="token comment">/// ```</span>
+<span class="token attribute attr-name">#[must_use]</span>
+<span class="token keyword">pub</span> <span class="token keyword">fn</span> <span class="token function-definition function">measure_qubits</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">-></span> <span class="token class-name">MeasuredQubits</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> num_qubits <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">get_num_qubits</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> measured_qubits<span class="token punctuation">:</span> <span class="token class-name">Vec</span><span class="token operator">&lt;</span><span class="token keyword">f64</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token macro property">vec!</span><span class="token punctuation">[</span><span class="token number">0.0</span><span class="token punctuation">;</span> num_qubits <span class="token keyword">as</span> <span class="token keyword">usize</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> index_main <span class="token keyword">in</span> <span class="token number">0</span><span class="token punctuation">..</span><span class="token keyword">self</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span><span class="token function">len</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token keyword">self</span><span class="token punctuation">.</span>main<span class="token punctuation">[</span>index_main<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token class-name">Complex</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">continue</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>index_measured_qubits<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token keyword">in</span> measured_qubits<span class="token punctuation">.</span><span class="token function">iter_mut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">enumerate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// check if the state has a bit in common with the measured_qubit index</span>
+            <span class="token comment">// does not matter which it is, thats why >= 1</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>index_main <span class="token operator">&amp;</span> <span class="token keyword">Self</span><span class="token punctuation">::</span><span class="token function">mask</span><span class="token punctuation">(</span>index_measured_qubits<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span> <span class="token punctuation">{</span>
+                <span class="token operator">*</span>value <span class="token operator">+=</span> <span class="token function">pow</span><span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>main<span class="token punctuation">[</span>index_main<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">norm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    measured_qubits
+<span class="token punctuation">}</span></code></pre>
+<h2>And a picture of more Rust code</h2>
+<p><img src="./image.png" alt="alt text"></p>
+<p>Fin.<br>
+Luis</p>
+
+    </section>
+  </article>
+
+</body>
+
+</html>
