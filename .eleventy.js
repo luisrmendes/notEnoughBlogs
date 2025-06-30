@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy({ "posts/": "posts/" });
 
   // Date filter
   eleventyConfig.addFilter("date", (dateObj, format = "yyyy-LL-dd") => {
@@ -21,7 +20,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: ".",
       includes: "src/_includes",
-      output: "docs"
+      output: "_site"
     }
   };
 };
