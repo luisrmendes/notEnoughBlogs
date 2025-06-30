@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-deploy:
@@ -24,7 +24,6 @@ jobs:
 
       - name: Check docs folder contents
         run: ls -la docs
-
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
