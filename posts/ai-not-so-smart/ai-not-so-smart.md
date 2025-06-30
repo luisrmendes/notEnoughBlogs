@@ -7,7 +7,7 @@ layout: post.njk
 
 ## AI Not So Intelligent
 
-This is my awesome post.  
+This is my best ever post.  
 Here is some Rust code to annoy some sdf.
 
 ```rust
