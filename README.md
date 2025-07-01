@@ -7,15 +7,9 @@ npm i
 
 ## Build
 
-Build Tailwind output.css
+Build static page and tailwind
 
-```
-npx @tailwindcss/cli -i ./src/input.css -o ./src/assets/output.css --watch
-```
-
-Build static page
-
-```
+```bash
 npm run build
 ```
 
@@ -23,22 +17,6 @@ npm run build
 
 Serve page
 
-```
-npx eleventy --serve
-```
-
-## First setup static page with tailwind and 11ty
-
 ```bash
-npm install tailwindcss @tailwindcss/cli
-```
-
-src/input.css
-
-```css
-@import "tailwindcss";
-```
-
-```
-npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch
+npx eleventy --serve
 ```

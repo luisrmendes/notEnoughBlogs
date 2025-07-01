@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "npx eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./_site/assets/output.css --minify",
-    "build": "npm run build:css && eleventy"
+    "build": "npm run build:css && eleventy",
+    "serve": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
