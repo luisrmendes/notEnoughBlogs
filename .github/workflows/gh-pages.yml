@@ -30,15 +30,11 @@ jobs:
       - name: Check docs folder contents
         run: ls -la docs
 
-      - name: Deploy to GitHub Pages
-        uses: actions/configure-pages@v3
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: ./docs
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
 
-      - name: Deploy artifact
-        uses: actions/deploy-pages@v1
+
 
