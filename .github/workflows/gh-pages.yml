@@ -26,9 +26,13 @@ jobs:
         run: ls -la docs
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: master    # or main, whichever your Pages source is set to
+          path: ./docs
+
+      - name: Deploy artifact
+        uses: actions/deploy-pages@v1
 
