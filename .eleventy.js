@@ -4,7 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date);
   });
 
@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: ".",
       includes: "src/_includes",
-      output: "docs"
+      output: "_site"
     }
   };
 };

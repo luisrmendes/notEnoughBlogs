@@ -27,8 +27,8 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Check docs folder contents
-        run: ls -la docs
+      - name: Check _site folder contents
+        run: ls -la _site
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
