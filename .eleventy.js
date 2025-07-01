@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("posts/**/*.{png,jpg,jpeg,gif,svg}");
 
   // Date filter
   eleventyConfig.addFilter("date", (dateObj, format = "yyyy-LL-dd") => {
