@@ -1,11 +1,12 @@
 ---
-title: An opinion in AI intelligence
-date: 2025-06-18
+title: Test 
+date: 2025-07-02
 author: Luis Mendes
 layout: post.njk
 ---
 
-## AI Not So Intelligent
+# Test
+
 
 This is my best ever post.  
 Here is some Rust code to annoy some sdf.

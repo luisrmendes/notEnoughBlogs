@@ -13,7 +13,7 @@
 <body class="min-h-screen bg-neutral-900 text-neutral-200 font-sans">
   {% include "header.njk" %}
 
-  <article class="max-w-3xl mx-auto pt-8">
+  <article class="max-w-3xl mx-auto pt-8 pb-70">
     <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
     <time datetime="{{ date.toISOString() }}" class="block text-neutral-400 mb-8">
       {{ date | date("MMMM d, yyyy") }}
@@ -23,6 +23,7 @@
       {{ content | safe }}
     </section>
   </article>
+
 
 </body>
 
