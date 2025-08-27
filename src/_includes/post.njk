@@ -16,7 +16,7 @@
   <article class="max-w-3xl mx-auto pt-8 pb-70">
     <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
     <time datetime="{{ date.toISOString() }}" class="block text-neutral-400 mb-8">
-      {{ date | date("MMMM d, yyyy") }}
+      {{ author }}, {{ date | date("MMMM d, yyyy") }}
     </time>
 
     <section style="background-color: #171717 !important;" class="markdown-body">
