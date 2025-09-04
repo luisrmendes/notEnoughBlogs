@@ -5,12 +5,10 @@ author: Luis Mendes
 layout: post.njk
 ---
 
-# Miscellaneous Character Drivers
-
 Here is a great article from the Linux Journal that provides a great explanation.  
 <https://www.linuxjournal.com/article/2920>  
 
-Here is a TLDR with minimal contributions from my side:
+A TLDR with minimal contributions from my side:
 
 ## What is a misc char driver?  
 
